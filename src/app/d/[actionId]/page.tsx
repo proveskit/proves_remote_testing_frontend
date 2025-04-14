@@ -46,7 +46,7 @@ export default async function DeploymentPage({
         <div className="flex-grow flex items-center"></div>
         <Link
           target="_blank"
-          href={`https://github.com/${deployment.pr_repo_owner}/${deployment.pr_repo}/pull/${deployment.pr_number}/checks?check_run_id=${deployment.action_id}`}
+          href={`https://github.com/${deployment.pr_repo}/pull/${deployment.pr_number}/checks?check_run_id=${deployment.action_id}`}
           className="flex items-center gap-1 text-neutral-600 hover:text-neutral-800 transition-colors"
         >
           <BiLinkExternal size={20} />
